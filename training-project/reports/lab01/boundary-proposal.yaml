@@ -1,0 +1,21 @@
+# Candidate for Laboratory 01: normally AI-generated; student-authored only on the documented no-agent fallback.
+# Replace the instructional values, but preserve every field and keep status proposed.
+schema_version: "1.0"
+proposal_id: lab01-boundary-data-analysis
+status: proposed
+personal_domain: Аналіз даних
+intended_learning_outcome: Пояснювати концепції курсу та їхні зв'язки на основі першоджерел, виявляти прогалини в передумовах і формулювати нерозв'язані питання.
+non_goals:
+  - Автономна модифікація канонічної бази знань у зовнішньому сховищі без явного затвердження людиною.
+  - Навчання базових моделей з нуля або обробка чутливих персональних даних у системі.
+governance:
+  ai_role: Propose a bounded system description and expose uncertainty without accepting changes.
+  deterministic_role: Validate the candidate, bind the decision to its digest, and apply only approved content.
+  human_role: Review meaning and explicitly approve or reject the proposal before application.
+usefulness_condition: Система дає змогу простежити концепцію до збереженого джерела та виявити прогалини в передумовах швидше й точніше, ніж простий пошук за ключовими словами.
+material_risk: Генерація правдоподібних, але непідтверджених джерелами семантичних зв'язків або концепцій, які за недостатнього людського контролю забруднюють канонічне сховище.
+non_ai_baseline: Ручне ведення нотаток у Markdown із використанням тегів і детермінованого повнотекстового пошуку через ripgrep.
+uncertainty: Чи буде наданого словника типізованих зв'язків достатньо для точного вираження концепцій аналізу даних без створення неконтрольованих відношень.
+required_evidence:
+  - Успішне проходження детермінованої валідації схеми через команду validate.
+  - Зафіксоване людське рішення про схвалення, прив'язане до SHA-256 дайджесту вмісту пропозиції.
