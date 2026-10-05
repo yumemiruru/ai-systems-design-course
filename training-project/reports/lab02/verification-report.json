@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "lab_id": "lab02",
   "status": "passed",
-  "generated_at": "2026-10-05T20:17:56.685245+00:00",
+  "generated_at": "2026-10-05T20:22:13.159567+00:00",
   "course_commit": "1b7764a6545317db8549d5c0969d3d6f538fef03",
   "live_runs": [
     "live-primary-01",
@@ -18,7 +18,7 @@
   "artifacts": {
     "vault/sources/module-02-foundation-models-and-ai-application-architecture.md": "ef180a23aea6c120c31d76922c2bf4fe0bc34dd38ff0a4d423df467a30fe2831",
     "report/live-comparison.json": "0edf71f7ccda67a66be8797f0f9a950fdcb01a2e8d2b39618353bd5dc27be301",
-    "report/REPORT.md": "fc497d553956241df2a916649f21848834a0b6fee168e09af238eeb8c19c3fc7",
+    "report/REPORT.md": "19cf8708c7f981563190221ea80bba30688c74056da174e0a7ede26292b095f3",
     "report/runs/live-primary-01/model-request.json": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
     "report/runs/live-primary-01/raw-response.txt": "9abc89f07209b5169d5c25f2cf65262a9f2aa9dd1e1626a228ec8c4748e73fc4",
     "report/runs/live-primary-01/run-metadata.json": "ddd3934374421ee87c87b7d62f27d6c8db3cfd37f54c0b646fe90a8fca95b172",
