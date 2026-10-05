@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "concept_id": "structured-output",
+  "title": "Structured Output",
+  "definition": "Model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields.",
+  "key_points": [
+    "Structured output is useful when downstream software must parse a response, when a task returns one of a fixed set of labels, or when a model proposes data for a controlled workflow.",
+    "Structural conformance can be improved through explicit format instructions, examples, post-processing, retries, constrained sampling, or model adaptation.",
+    "A model-backed operation needs three distinct gates: a syntactic gate, a deterministic invariant gate, and a semantic acceptance gate."
+  ],
+  "source_support": [
+    {
+      "claim_kind": "definition",
+      "claim": "Structured output is model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields.",
+      "quote": "**Structured output** is model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields."
+    },
+    {
+      "claim_kind": "syntax-vs-semantics",
+      "claim": "JSON mode can guarantee valid JSON syntax but not the required fields or the truth of their values.",
+      "quote": "A provider's JSON mode may guarantee valid JSON syntax without guaranteeing the required fields or the truth of their values."
+    },
+    {
+      "claim_kind": "authority-boundary",
+      "claim": "Accepted state can be written only by a separately authorized application operation when the decision still identifies the exact reviewed candidate.",
+      "quote": "Only a separately authorized application operation may write accepted state, and only when the decision still identifies the exact candidate that was reviewed."
+    }
+  ],
+  "tags": [
+    "structured-output",
+    "machine-readable",
+    "validation",
+    "semantic-acceptance",
+    "authority-boundary"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "comparison_id": "lab02-live-comparison",
+  "comparison_kind": "fallback-portability",
+  "run_ids": [
+    "live-primary-01",
+    "live-primary-02"
+  ],
+  "request_sha256": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
+  "runs": [
+    {
+      "run_id": "live-primary-01",
+      "adapter": "openai-compatible",
+      "model_id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "request_sha256": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
+      "raw_response_sha256": "9abc89f07209b5169d5c25f2cf65262a9f2aa9dd1e1626a228ec8c4748e73fc4",
+      "proposal_id": "lab02-structured-output-live-primary-01",
+      "proposal_sha256": "a939b00193d404221cf5231729120b29934ac04b48dc0bb5a189ec7e5b71eebc"
+    },
+    {
+      "run_id": "live-primary-02",
+      "adapter": "openai-compatible",
+      "model_id": "qwen/qwen3.8-27b:free",
+      "request_sha256": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
+      "raw_response_sha256": "2eae9d219fac74cc1a6a67b247d68b61cf9c0fcceb8e38ecf8250e9ed637b494",
+      "proposal_id": "lab02-structured-output-live-primary-02",
+      "proposal_sha256": "fc9d79520ceb73e15779ad225a8596e3fcfe266f1ec4fe01b1c866727efe049e"
+    }
+  ],
+  "structural_differences": {
+    "raw_bytes_differ": true,
+    "top_level_keys_differ": false,
+    "definition_differs": true,
+    "key_points_differs": true,
+    "source_support_quotes_differ": false
+  },
+  "generated_at": "2026-10-04T16:28:22.438141+00:00"
+}
