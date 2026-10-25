@@ -1,0 +1,7 @@
+regression_id: unsupported-claim-added
+source_kind: observed-failure
+position_id: <реальний-position-id-вашої-спроби>
+blind_id: blind-003
+diagnosis: "Відповідь додала непідкріплені твердження про вдосконалення систем, порушивши правило суворого підкріплення джерелом"
+expected_behavior_review: "Очікувана поведінка залишається коректною: модель має формувати відповідь виключно на основі наданих фактів"
+reviewed_by: "yuliia-o"

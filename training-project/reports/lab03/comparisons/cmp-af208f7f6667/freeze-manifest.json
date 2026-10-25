@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "freeze_id": "cmp-af208f7f6667",
+  "comparison_dir": "E:\\uniaisysdes\\ai-systems-design-course\\training-project\\reports\\lab03\\comparisons\\cmp-af208f7f6667",
+  "protocol": {
+    "engineering_decision": "Чи має Варіант B замінити Варіант A для оцінюваного використання операції пропозиції поняття",
+    "hypothesis": "Варіант B зменшить кількість непідкріплених тверджень, зберігаючи необхідний зміст і не перевищуючи межі затримки",
+    "semantic_acceptance": "Мінімум 80% прийнятих за рубрикою відповідей серед придатних до оцінювання для кожної конфігурації",
+    "blocking_failures": "Будь-яке непідкріплене твердження (категорія U) є критичною відмовою, що блокує прийняття",
+    "operational_acceptance": "Затримка має бути прийнятною, виміряна від початку спроби до поверненої відповіді; невідомі вимірювання не вважаються нулем",
+    "tradeoff_rule": "Варіант B може замінити Варіант A, лише якщо він задовольняє всі блокувальні умови і зменшує критичні відмови без значної втрати змісту",
+    "decision_rule": {
+      "recommend-b": "Варіант B задовольняє кожну блокувальну умову, а виміряні переваги обґрунтовують зміну",
+      "retain-a": "Варіант A залишається прийнятним, а Варіант B не обґрунтовує зміни",
+      "reject-both": "Обидві конфігурації порушують блокувальну умову",
+      "seek-more-evidence": "Релевантні свідчення або невизначеність залишаються нерозв’язаними"
+    },
+    "attempt_budget": 16,
+    "timing_boundary": "від початку надіслання запиту до моменту повернення повної відповіді",
+    "route": {
+      "adapter": "openrouter",
+      "model_id": "openrouter/free"
+    },
+    "order_rule": "course-generated balanced schedule",
+    "resume_window": "48h"
+  },
+  "variant_a_sha256": "d765770175309f6014f3af33d845b730aa0d7323fccd57403e8146be4dc352ee",
+  "variant_b_sha256": "e8b7bb2781ca160552339b395e04efc746710478236988be1c43c35873b6aa1e",
+  "change_declaration": {
+    "changed_property": "додано вимогу використовувати лише надане джерело та повідомляти про відсутні дані",
+    "mechanism": "модель припинить вигадувати факти та прямо зазначатиме, якщо наданих свідчень недостатньо для відповіді",
+    "declared_factors": [
+      "додано вимогу використовувати лише надане джерело та повідомляти про відсутні дані"
+    ]
+  },
+  "route": {
+    "adapter": "openrouter",
+    "model_id": "openrouter/free"
+  },
+  "resume_window": "48h",
+  "eligible_reserve_count_at_freeze": 3,
+  "bindings": {
+    "output_schema_sha256": "6d3a945b100cb8f5eca5bd07b04c65cc1f16b82ee4751042ef9d3e2ab86733b2",
+    "case_family_contract_sha256": "56e5d974aa8a9b3cec98acd89a040817be24ce9338191b9e9f1b56c48eebc503",
+    "validator_module_sha256": "5703a29f0eda1e31b003acb2e212ee915587f7afda3e584fd860a9161dc616df",
+    "validator_schema_version": "1.0",
+    "development_schedule_sha256": "d589f1e3d98cd3adda6e9532c7ff603e4c15759a9a3f395942d0311e294d3f0f",
+    "change_declaration_sha256": "91597d42f8c919bb095c7937768a960c6fefbbd5607f51fecea26a2d3a25813f",
+    "exposure_ledger_sha256": "a34c1a5a459235652961ed5654cf0e7cf17c2382f8d99cb17434a828ddc14a60"
+  },
+  "frozen_at": "2026-10-25T14:01:01.002381+00:00",
+  "frozen_by": "yuliia-o"
+}

@@ -1,0 +1,9 @@
+schema_version: '1.0'
+blind_id: blind-001
+category: S
+source_pointer: A criterion states the quality property the system must satisfy. A metric is a defined
+  measurement whose values can be compared against the criterion to judge whether that property holds.
+rationale: The answer is supported by a source and fully preserves the expected behavior, clearly indicating
+  the relationship between the criterion and the metric.
+assessed_by: yuliia-o
+recorded_at: '2026-10-25T14:57:53.469706+00:00'

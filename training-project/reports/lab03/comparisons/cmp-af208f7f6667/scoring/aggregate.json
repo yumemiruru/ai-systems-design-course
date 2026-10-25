@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "comparison_id": "cmp-af208f7f6667",
+  "nested_counts": {
+    "a": {
+      "attempted": 8,
+      "returned": 8,
+      "structurally_valid": 7,
+      "assessable": 7,
+      "rubric_acceptable": 6
+    },
+    "b": {
+      "attempted": 8,
+      "returned": 8,
+      "structurally_valid": 8,
+      "assessable": 8,
+      "rubric_acceptable": 8
+    }
+  },
+  "failure_counts": {
+    "a": 0,
+    "b": 0
+  },
+  "unstarted_counts": {
+    "a": 0,
+    "b": 0
+  },
+  "critical_unsupported_counts": {
+    "a": 1,
+    "b": 0
+  },
+  "slices": {
+    "sufficient-evidence": {
+      "a": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 1,
+        "critical_unsupported": 1
+      },
+      "b": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 2,
+        "critical_unsupported": 0
+      }
+    },
+    "distractor": {
+      "a": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 2,
+        "critical_unsupported": 0
+      },
+      "b": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 2,
+        "critical_unsupported": 0
+      }
+    },
+    "missing-fact": {
+      "a": {
+        "returned": 1,
+        "structurally_valid": 1,
+        "assessable": 1,
+        "rubric_acceptable": 1,
+        "critical_unsupported": 0
+      },
+      "b": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 2,
+        "critical_unsupported": 0
+      }
+    },
+    "explicit-ambiguity": {
+      "a": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 2,
+        "critical_unsupported": 0
+      },
+      "b": {
+        "returned": 2,
+        "structurally_valid": 2,
+        "assessable": 2,
+        "rubric_acceptable": 2,
+        "critical_unsupported": 0
+      }
+    }
+  },
+  "repeated_attempt_differences": [
+    {
+      "case_id": "criterion-metric-chain-plain",
+      "a": [
+        "blind-001:S",
+        "blind-003:U"
+      ],
+      "b": [
+        "blind-002:S",
+        "blind-004:S"
+      ],
+      "differs_within_a": true,
+      "differs_within_b": true
+    },
+    {
+      "case_id": "criterion-metric-chain-distractor",
+      "a": [
+        "blind-005:S",
+        "blind-007:S"
+      ],
+      "b": [
+        "blind-006:S",
+        "blind-008:S"
+      ],
+      "differs_within_a": true,
+      "differs_within_b": true
+    },
+    {
+      "case_id": "criterion-metric-chain-ambiguous-acceptance",
+      "a": [
+        "blind-012:Q",
+        "blind-014:Q"
+      ],
+      "b": [
+        "blind-013:Q",
+        "blind-015:Q"
+      ],
+      "differs_within_a": true,
+      "differs_within_b": true
+    }
+  ],
+  "observed_latency": {
+    "a": [
+      {
+        "position_id": "pos-criterion-metric-chain-plain-a-1",
+        "started_at": "2026-10-25T14:17:02.939831+00:00",
+        "finished_at": "2026-10-25T14:17:06.559416+00:00",
+        "seconds": 3.619585
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-plain-a-2",
+        "started_at": "2026-10-25T14:17:33.511387+00:00",
+        "finished_at": "2026-10-25T14:17:40.480327+00:00",
+        "seconds": 6.96894
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-distractor-a-1",
+        "started_at": "2026-10-25T14:19:10.991955+00:00",
+        "finished_at": "2026-10-25T14:19:14.806708+00:00",
+        "seconds": 3.814753
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-distractor-a-2",
+        "started_at": "2026-10-25T14:21:02.560045+00:00",
+        "finished_at": "2026-10-25T14:21:10.330597+00:00",
+        "seconds": 7.770552
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-rubric-absent-a-1",
+        "started_at": "2026-10-25T14:22:35.345521+00:00",
+        "finished_at": "2026-10-25T14:22:38.384115+00:00",
+        "seconds": 3.038594
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-rubric-absent-a-2",
+        "started_at": "2026-10-25T14:23:12.089258+00:00",
+        "finished_at": "2026-10-25T14:23:14.492577+00:00",
+        "seconds": 2.403319
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-ambiguous-acceptance-a-1",
+        "started_at": "2026-10-25T14:25:59.111002+00:00",
+        "finished_at": "2026-10-25T14:26:05.347510+00:00",
+        "seconds": 6.236508
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-ambiguous-acceptance-a-2",
+        "started_at": "2026-10-25T14:27:39.068073+00:00",
+        "finished_at": "2026-10-25T14:27:42.559394+00:00",
+        "seconds": 3.491321
+      }
+    ],
+    "b": [
+      {
+        "position_id": "pos-criterion-metric-chain-plain-b-1",
+        "started_at": "2026-10-25T14:15:11.362285+00:00",
+        "finished_at": "2026-10-25T14:15:17.202224+00:00",
+        "seconds": 5.839939
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-plain-b-2",
+        "started_at": "2026-10-25T14:18:07.647553+00:00",
+        "finished_at": "2026-10-25T14:18:18.097335+00:00",
+        "seconds": 10.449782
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-distractor-b-1",
+        "started_at": "2026-10-25T14:19:39.979214+00:00",
+        "finished_at": "2026-10-25T14:19:50.534765+00:00",
+        "seconds": 10.555551
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-distractor-b-2",
+        "started_at": "2026-10-25T14:20:34.976470+00:00",
+        "finished_at": "2026-10-25T14:20:38.771901+00:00",
+        "seconds": 3.795431
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-rubric-absent-b-1",
+        "started_at": "2026-10-25T14:22:02.901138+00:00",
+        "finished_at": "2026-10-25T14:22:05.331454+00:00",
+        "seconds": 2.430316
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-rubric-absent-b-2",
+        "started_at": "2026-10-25T14:25:10.517073+00:00",
+        "finished_at": "2026-10-25T14:25:16.290232+00:00",
+        "seconds": 5.773159
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-ambiguous-acceptance-b-1",
+        "started_at": "2026-10-25T14:26:41.431732+00:00",
+        "finished_at": "2026-10-25T14:26:43.880303+00:00",
+        "seconds": 2.448571
+      },
+      {
+        "position_id": "pos-criterion-metric-chain-ambiguous-acceptance-b-2",
+        "started_at": "2026-10-25T14:27:10.178381+00:00",
+        "finished_at": "2026-10-25T14:27:18.949926+00:00",
+        "seconds": 8.771545
+      }
+    ]
+  },
+  "observed_models": {
+    "a": [
+      "cohere/north-mini-code:free",
+      "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "nvidia/nemotron-3.5-content-safety:free",
+      "nvidia/nemotron-3.5-lightning:free",
+      "nvidia/nemotron-3.5-super-vl:free"
+    ],
+    "b": [
+      "cohere/north-mini-code:free",
+      "dots-studio/dots-3-note-preview:free",
+      "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "nvidia/nemotron-3.5-lightning:free",
+      "recursive/flint-v1.0:free"
+    ]
+  },
+  "unknown_values": {
+    "monetary_cost": "unknown",
+    "quota_usage": "unknown",
+    "token_usage": "unknown"
+  },
+  "generated_at": "2026-10-25T15:28:38.434479+00:00"
+}

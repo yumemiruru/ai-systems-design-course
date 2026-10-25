@@ -1,0 +1,9 @@
+schema_version: '1.0'
+blind_id: blind-012
+category: Q
+source_pointer: The note records two checked values for the same run and does not say which one the bound
+  applies to.
+rationale: The answer correctly points out the ambiguity of the source and does not attempt to choose
+  a specific meaning, thereby exhibiting the expected behavior.
+assessed_by: yuliia-o
+recorded_at: '2026-10-25T15:17:32.633166+00:00'

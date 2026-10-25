@@ -1,0 +1,9 @@
+{
+  "position_id": "pos-criterion-metric-chain-rubric-absent-a-1",
+  "adapter": "openrouter",
+  "model_id": "openrouter/free",
+  "started_at": "2026-10-25T14:22:35.345521+00:00",
+  "finished_at": "2026-10-25T14:22:38.384115+00:00",
+  "recorded_by": "yuliia-o",
+  "observed_model": "nvidia/nemotron-3.5-super-vl:free"
+}

@@ -1,0 +1,9 @@
+schema_version: '1.0'
+blind_id: blind-007
+category: S
+source_pointer: A criterion states the quality property the system must satisfy. A metric is a defined
+  measurement whose values can be compared against the criterion to judge whether that property holds.
+rationale: The response maintains the necessary connection and successfully ignores distracting information
+  about backups.
+assessed_by: yuliia-o
+recorded_at: '2026-10-25T15:11:26.329299+00:00'

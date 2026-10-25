@@ -1,0 +1,8 @@
+schema_version: '1.0'
+blind_id: blind-014
+category: Q
+source_pointer: The note records two checked values for the same run and does not say which one the bound
+  applies to.
+rationale: The response correctly identifies ambiguous evidence by exhibiting the expected behavior.
+assessed_by: yuliia-o
+recorded_at: '2026-10-25T15:19:07.451509+00:00'

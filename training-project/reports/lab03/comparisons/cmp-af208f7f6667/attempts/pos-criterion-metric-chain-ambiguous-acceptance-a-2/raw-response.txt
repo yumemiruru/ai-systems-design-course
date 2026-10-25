@@ -1,0 +1,4 @@
+{
+  "case_id": "criterion-metric-chain-ambiguous-acceptance",
+  "proposed_text": "The acceptance condition cannot be tied to a specific measurement because the note records two checked values for the same run and does not state which of them the declared bound applies to, leaving the referenced measurement ambiguous."
+}

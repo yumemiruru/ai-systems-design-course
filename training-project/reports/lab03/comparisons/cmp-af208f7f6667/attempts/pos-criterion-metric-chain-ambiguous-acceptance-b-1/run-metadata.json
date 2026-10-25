@@ -1,0 +1,9 @@
+{
+  "position_id": "pos-criterion-metric-chain-ambiguous-acceptance-b-1",
+  "adapter": "openrouter",
+  "model_id": "openrouter/free",
+  "started_at": "2026-10-25T14:26:41.431732+00:00",
+  "finished_at": "2026-10-25T14:26:43.880303+00:00",
+  "recorded_by": "yuliia-o",
+  "observed_model": "recursive/flint-v1.0:free"
+}

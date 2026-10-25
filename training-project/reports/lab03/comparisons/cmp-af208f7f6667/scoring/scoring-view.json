@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "note": "Scoring view: variant identity, order, and split labels are joined only after judgments are frozen.",
+  "items": [
+    {
+      "blind_id": "blind-001",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds.",
+      "expected_behavior": "A supported response preserves the relation: the criterion states the property, the metric measures it, and metric values are compared against the criterion. Omitting the comparison direction leaves the relation incomplete.",
+      "proposed_text": "A criterion states the quality property the system must satisfy, establishing the standard against which performance is judged, while a metric is a defined measurement whose values can be compared against the criterion to determine whether that property holds; thus, the criterion defines what quality means and the metric supplies the concrete evidence used to evaluate compliance."
+    },
+    {
+      "blind_id": "blind-002",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds.",
+      "expected_behavior": "A supported response preserves the relation: the criterion states the property, the metric measures it, and metric values are compared against the criterion. Omitting the comparison direction leaves the relation incomplete.",
+      "proposed_text": "A criterion specifies the quality property that a system must satisfy, while a metric provides a defined measurement whose values can be compared against that criterion to determine whether the property holds, thereby linking the qualitative requirement to a quantitative assessment."
+    },
+    {
+      "blind_id": "blind-003",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds.",
+      "expected_behavior": "A supported response preserves the relation: the criterion states the property, the metric measures it, and metric values are compared against the criterion. Omitting the comparison direction leaves the relation incomplete.",
+      "proposed_text": "In evaluation design, a criterion defines the specific quality property or standard that a system is required to meet, serving as the target or goal for performance; a metric, meanwhile, provides a quantifiable measurement or observable indicator that can be systematically compared against the criterion to determine whether the stated quality property is actually achieved, thereby enabling an objective judgment of compliance or deficiency. This relationship ensures that evaluation is grounded in both a clear statement of desired quality and a reliable means of measuring it, allowing designers to assess, refine, and validate their systems against explicit, measurable benchmarks."
+    },
+    {
+      "blind_id": "blind-004",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds.",
+      "expected_behavior": "A supported response preserves the relation: the criterion states the property, the metric measures it, and metric values are compared against the criterion. Omitting the comparison direction leaves the relation incomplete.",
+      "proposed_text": "A criterion defines the quality property a system must satisfy, and a metric is a defined measurement that can be compared against the criterion to judge whether that property holds; thus the metric provides the means to assess the criterion."
+    },
+    {
+      "blind_id": "blind-005",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds. In an unrelated deployment note, nightly backups keep the shared drive available for every regional office.",
+      "expected_behavior": "A supported response preserves the criterion-metric-comparison relation and does not import backups, drives, or offices into it.",
+      "proposed_text": "In evaluation design, a criterion defines the specific quality property or performance standard that a system must meet, while a metric provides a quantifiable measurement whose numeric value can be directly compared to that criterion to determine whether the property holds, thereby forming a logical chain where the metric serves as the evidence used to judge compliance with the criterion."
+    },
+    {
+      "blind_id": "blind-006",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds. In an unrelated deployment note, nightly backups keep the shared drive available for every regional office.",
+      "expected_behavior": "A supported response preserves the criterion-metric-comparison relation and does not import backups, drives, or offices into it.",
+      "proposed_text": "A criterion states the quality property the system must satisfy, and a metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds."
+    },
+    {
+      "blind_id": "blind-007",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds. In an unrelated deployment note, nightly backups keep the shared drive available for every regional office.",
+      "expected_behavior": "A supported response preserves the criterion-metric-comparison relation and does not import backups, drives, or offices into it.",
+      "proposed_text": "In evaluation design, a criterion specifies the quality attribute that the system must achieve, while a metric is a concrete measurement that quantifies the system's performance on that attribute; the metric's numerical value is then compared to the criterion to determine whether the quality requirement is satisfied."
+    },
+    {
+      "blind_id": "blind-008",
+      "case_task": "Explain how a criterion and a metric are related in evaluation design.",
+      "supplied_source": "A criterion states the quality property the system must satisfy. A metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds. In an unrelated deployment note, nightly backups keep the shared drive available for every regional office.",
+      "expected_behavior": "A supported response preserves the criterion-metric-comparison relation and does not import backups, drives, or offices into it.",
+      "proposed_text": "In evaluation design, a criterion states the quality property the system must satisfy, while a metric is a defined measurement whose values can be compared against the criterion to judge whether that property holds. Thus the criterion sets the quality property to be satisfied, and the metric provides the measured value that can be compared against that criterion."
+    },
+    {
+      "blind_id": "blind-009",
+      "case_task": "State how many rubric categories the department's evaluation rubric defines.",
+      "supplied_source": "An evaluation rubric is a written set of categories, rules for assigning those categories, and examples that show the boundaries between them.",
+      "expected_behavior": "The source names no department rubric and no count, so a supported response states that the number of categories is not specified instead of inventing one.",
+      "proposed_text": "The supplied source does not state how many rubric categories the department's evaluation rubric defines; it only offers a general definition of an evaluation rubric without any department-specific details or category count."
+    },
+    {
+      "blind_id": "blind-010",
+      "case_task": "State how many rubric categories the department's evaluation rubric defines.",
+      "supplied_source": "An evaluation rubric is a written set of categories, rules for assigning those categories, and examples that show the boundaries between them.",
+      "expected_behavior": "The source names no department rubric and no count, so a supported response states that the number of categories is not specified instead of inventing one.",
+      "proposed_text": "The supplied source does not specify how many rubric categories the department's evaluation rubric defines."
+    },
+    {
+      "blind_id": "blind-011",
+      "case_task": "State how many rubric categories the department's evaluation rubric defines.",
+      "supplied_source": "An evaluation rubric is a written set of categories, rules for assigning those categories, and examples that show the boundaries between them.",
+      "expected_behavior": "The source names no department rubric and no count, so a supported response states that the number of categories is not specified instead of inventing one.",
+      "proposed_text": "The supplied source defines an evaluation rubric generally as a written set of categories, rules for assigning those categories, and examples that show the boundaries between them, but it does not specify the number of rubric categories for the department's evaluation rubric. Therefore, the requested information is not provided in the source."
+    },
+    {
+      "blind_id": "blind-012",
+      "case_task": "State which measurement the acceptance condition of this note refers to.",
+      "supplied_source": "The acceptance condition passes when the checked value is within the declared bound. The note records two checked values for the same run and does not say which one the bound applies to.",
+      "expected_behavior": "The note declares that it does not say which checked value the bound applies to, so a supported response reports that unresolved reference rather than selecting a value.",
+      "proposed_text": "The acceptance condition of the note refers to the bound on a checked value, but because the note records two checked values for the same run without indicating which one the bound applies to, it is ambiguous which measurement (the first or the second) the acceptance condition is referencing."
+    },
+    {
+      "blind_id": "blind-013",
+      "case_task": "State which measurement the acceptance condition of this note refers to.",
+      "supplied_source": "The acceptance condition passes when the checked value is within the declared bound. The note records two checked values for the same run and does not say which one the bound applies to.",
+      "expected_behavior": "The note declares that it does not say which checked value the bound applies to, so a supported response reports that unresolved reference rather than selecting a value.",
+      "proposed_text": "The supplied source does not specify which measurement the acceptance condition refers to; it only states that the acceptance condition passes when the checked value is within the declared bound, and notes that the note records two checked values for the same run without saying which one the bound applies to."
+    },
+    {
+      "blind_id": "blind-014",
+      "case_task": "State which measurement the acceptance condition of this note refers to.",
+      "supplied_source": "The acceptance condition passes when the checked value is within the declared bound. The note records two checked values for the same run and does not say which one the bound applies to.",
+      "expected_behavior": "The note declares that it does not say which checked value the bound applies to, so a supported response reports that unresolved reference rather than selecting a value.",
+      "proposed_text": "The acceptance condition cannot be tied to a specific measurement because the note records two checked values for the same run and does not state which of them the declared bound applies to, leaving the referenced measurement ambiguous."
+    },
+    {
+      "blind_id": "blind-015",
+      "case_task": "State which measurement the acceptance condition of this note refers to.",
+      "supplied_source": "The acceptance condition passes when the checked value is within the declared bound. The note records two checked values for the same run and does not say which one the bound applies to.",
+      "expected_behavior": "The note declares that it does not say which checked value the bound applies to, so a supported response reports that unresolved reference rather than selecting a value.",
+      "proposed_text": "The source states that the note records two checked values for the same run and does not indicate which one the bound applies to, so the measurement the acceptance condition refers to is not specified."
+    }
+  ]
+}

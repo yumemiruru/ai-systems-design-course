@@ -1,0 +1,9 @@
+{
+  "position_id": "pos-criterion-metric-chain-plain-b-2",
+  "adapter": "openrouter",
+  "model_id": "openrouter/free",
+  "started_at": "2026-10-25T14:18:07.647553+00:00",
+  "finished_at": "2026-10-25T14:18:18.097335+00:00",
+  "recorded_by": "yuliia-o",
+  "observed_model": "dots-studio/dots-3-note-preview:free"
+}

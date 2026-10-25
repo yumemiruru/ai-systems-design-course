@@ -1,0 +1,9 @@
+{
+  "position_id": "pos-criterion-metric-chain-distractor-b-1",
+  "adapter": "openrouter",
+  "model_id": "openrouter/free",
+  "started_at": "2026-10-25T14:19:39.979214+00:00",
+  "finished_at": "2026-10-25T14:19:50.534765+00:00",
+  "recorded_by": "yuliia-o",
+  "observed_model": "dots-studio/dots-3-note-preview:free"
+}

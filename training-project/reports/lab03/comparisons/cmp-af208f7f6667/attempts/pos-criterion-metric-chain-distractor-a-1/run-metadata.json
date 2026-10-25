@@ -1,0 +1,9 @@
+{
+  "position_id": "pos-criterion-metric-chain-distractor-a-1",
+  "adapter": "openrouter",
+  "model_id": "openrouter/free",
+  "started_at": "2026-10-25T14:19:10.991955+00:00",
+  "finished_at": "2026-10-25T14:19:14.806708+00:00",
+  "recorded_by": "yuliia-o",
+  "observed_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+}

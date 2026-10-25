@@ -1,0 +1,31 @@
+schema_version: '1.0'
+comparison_id: cmp-af208f7f6667
+outcome: recommend-b
+rationale: Option B achieved 100% acceptability (8 out of 8), surpassing the 80% threshold and avoiding
+  critical failures. Option A achieved only 75% (6 out of 8) and violated the blocking condition regarding
+  unsupported assertions (category U).
+limitations:
+- small designed set
+- manual scoring introduces subjective bias
+blocking_failures: Будь-яке непідкріплене твердження (категорія U) є критичною відмовою, що блокує прийняття
+decision_rule:
+  recommend-b: Варіант B задовольняє кожну блокувальну умову, а виміряні переваги обґрунтовують зміну
+  retain-a: Варіант A залишається прийнятним, а Варіант B не обґрунтовує зміни
+  reject-both: Обидві конфігурації порушують блокувальну умову
+  seek-more-evidence: Релевантні свідчення або невизначеність залишаються нерозв’язаними
+nested_counts:
+  a:
+    attempted: 8
+    returned: 8
+    structurally_valid: 7
+    assessable: 7
+    rubric_acceptable: 6
+  b:
+    attempted: 8
+    returned: 8
+    structurally_valid: 8
+    assessable: 8
+    rubric_acceptable: 8
+protocol_freeze_id: cmp-af208f7f6667
+recorded_by: yuliia-o
+recorded_at: '2026-10-25T15:37:12.567119+00:00'
