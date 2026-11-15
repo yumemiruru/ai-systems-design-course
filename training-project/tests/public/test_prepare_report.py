@@ -78,6 +78,32 @@ class PrepareReportCommandTests(unittest.TestCase):
 
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_generated_submission_reports_are_ignored_for_current_and_future_labs(self) -> None:
+        project_root = Path(__file__).resolve().parents[2]
+        subprocess.run(["git", "init", "-q", str(self.root)], check=True)
+        shutil.copyfile(project_root / ".gitignore", self.root / ".gitignore")
+        for lab in ("lab04", "lab05", "lab06", "lab99"):
+            with self.subTest(lab=lab):
+                result = subprocess.run(
+                    ["git", "-C", str(self.root), "check-ignore", f"reports/{lab}/submission/REPORT.md"],
+                    capture_output=True,
+                    text=True,
+                )
+                self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_source_reports_and_evidence_are_not_ignored_by_submission_rule(self) -> None:
+        project_root = Path(__file__).resolve().parents[2]
+        subprocess.run(["git", "init", "-q", str(self.root)], check=True)
+        shutil.copyfile(project_root / ".gitignore", self.root / ".gitignore")
+        for path in ("reports/lab05/REPORT.md", "reports/lab05/screenshots/01-query-rewriting.png", "reports/lab05/evaluation/judgment.json"):
+            with self.subTest(path=path):
+                result = subprocess.run(
+                    ["git", "-C", str(self.root), "check-ignore", path],
+                    capture_output=True,
+                    text=True,
+                )
+                self.assertEqual(result.returncode, 1, result.stderr)
+
     def test_prepare_report_leaves_data_uris_and_http_links_unchanged(self) -> None:
         self.report_path.write_text(
             "![already](data:image/png;base64,AAAA)\n"
@@ -259,6 +285,34 @@ class PrepareReportCommandTests(unittest.TestCase):
         submission = (self.report_dir / "submission" / "REPORT.md").read_text(encoding="utf-8")
         self.assertEqual(submission.count("data:image/png;base64,"), 1)
         self.assertNotIn("screenshots/07-final-verification.png", submission)
+
+    def test_prepare_report_embeds_all_images_from_the_real_lab04_template(self) -> None:
+        fixture = Path(__file__).resolve().parents[2] / "fixtures" / "lab04" / "REPORT.md"
+        shutil.copyfile(fixture, self.report_path)
+        screenshot_names = (
+            "01-boundary-selection.png",
+            "02-embedding-index.png",
+            "03-retrieval-comparison.png",
+            "04-relevance-metrics.png",
+            "05-operational-decision.png",
+            "06-final-verification.png",
+        )
+        for name in screenshot_names:
+            write_png(self.screenshots / name, 40, 20)
+        source_before = self.report_path.read_text(encoding="utf-8")
+
+        code, out, err = run_cli(["prepare-report", str(self.report_path)])
+
+        self.assertEqual(code, 0)
+        self.assertEqual(err, "")
+        self.assertIn("Embedded images: 6", out)
+        self.assertEqual(self.report_path.read_text(encoding="utf-8"), source_before)
+        self.assertEqual(source_before.count("screenshots/"), 6)
+        self.assertNotIn("data:image/", source_before)
+        submission = (self.report_dir / "submission" / "REPORT.md").read_text(encoding="utf-8")
+        self.assertEqual(submission.count("data:image/png;base64,"), 6)
+        for name in screenshot_names:
+            self.assertNotIn(f"screenshots/{name}", submission)
 
 
 if __name__ == "__main__":
