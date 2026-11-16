@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "shared experiment protocol id": "SEP-05-1",
+  "bounded configuration decision": "adopt the candidate configuration",
+  "decision rationale": "Both the candidate configuration and the experiment baseline achieved a 1.00 rubric pass rate and met all acceptance conditions, resulting in 'adoption permitted' and 'retention permitted'. We adopt the candidate configuration for the declared development evaluation cases. This decision does not select the retrieval configuration and does not authorize any writes to the canonical knowledge collection.",
+  "rubric pass rates": {
+    "experiment baseline": 1.0,
+    "candidate configuration": 1.0
+  },
+  "candidate configuration role outcome": "adoption permitted",
+  "experiment baseline role outcome": "retention permitted",
+  "scope": "The bounded configuration decision rests on the declared development evaluation cases and supplies no held-out evidence.",
+  "authority boundary": "The bounded configuration decision does not select a retrieval configuration and authorizes no write to the canonical knowledge collection.",
+  "recorded by": "yuliia-o"
+}

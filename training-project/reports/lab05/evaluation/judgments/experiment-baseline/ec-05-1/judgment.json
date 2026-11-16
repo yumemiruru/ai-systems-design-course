@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "shared experiment protocol id": "SEP-05-1",
+  "configuration role": "experiment baseline",
+  "evaluation case id": "EC-05-1",
+  "outcome type": "candidate concept definition",
+  "rubric check": "Candidate concept definition check",
+  "human evaluator judgment": "pass",
+  "judgment rationale": "Generated claims were verified against selected retrieval unit F-A and are fully supported without hallucination.",
+  "review minutes": 4.0,
+  "outcome sha256": "1c81626744da18670eff23f735252dc1a6baeb84b3bd09108d739b8428884305",
+  "recorded by": "yuliia-o",
+  "authority boundary": "The recorded judgment is not an authorization to change the canonical knowledge collection."
+}
